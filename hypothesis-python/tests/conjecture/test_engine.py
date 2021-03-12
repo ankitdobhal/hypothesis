@@ -113,7 +113,6 @@ def slow_shrinker():
 
 @pytest.mark.parametrize("n", [1, 5])
 def test_terminates_shrinks(n, monkeypatch):
-    from hypothesis.internal.conjecture import engine
 
     db = InMemoryExampleDatabase()
 
