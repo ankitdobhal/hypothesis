@@ -90,6 +90,8 @@ default_variable = DynamicVariable(None)
 
 
 class settingsMeta(type):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
 
     @property
     def default(self):
